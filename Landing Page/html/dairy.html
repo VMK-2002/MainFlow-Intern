@@ -2,82 +2,106 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>About Us</title>
+        <title>Dairy Products</title>
         <link rel="stylesheet" href="../css/index.css"> 
+        <link rel="stylesheet" href="../css/dairy.css">
     </head>
     <body>
-        <h1>Dairy</h1>
 
-        <div>
-            <div>
-                <img src="../assets/milk.jpg" alt="Organic Milk" width="200" height="200">
-            </div>
-            <div>
-                <h3>Organic Milk (Full Cream)</h3>
-                <p>Price: &#8377;60 <br>Quantity: 1 Litre
-                    <br> Description: <br>
-                Our organic full cream milk is sourced from grass-fed cows, ensuring a rich and creamy texture. 
-                Free from artificial hormones and antibiotics, it is perfect for drinking, cooking, or baking.
-                </p>
-            </div>
-        </div>
+        <nav class="navigation">
+            <ul class="list">
+                <li id="logo"><a href="#">Organic Farming</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <select class="products" onchange="window.location.href = this.value">
+                        <option id="optitle" value="" disabled selected>Products</option>
+                        <option value="fruits.html">Fruits</option>
+                        <option value="vegetables.html">Vegetables</option>
+                        <option value="grains.html">Grains</option>
+                        <option value="dairy.html">Dairy</option>
+                     </select>
+                </li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li id="about"><a href="about.html" target="_blank">About</a></li>
+            </ul>
+        </nav>
 
-        <div>
+        <div class="container">
             <div>
-                <img src="../assets/yogurt.jpg" alt="Organic Yogurt" width="200" height="200">
+                <h1>Dairy</h1>
             </div>
-            <div>
-                <h3>Organic Yogurt (Plain)</h3>
-                <p>Price: &#8377;50 <br>Quantity: 500g
-                    <br> Description: <br>
-                Creamy and tangy, our organic plain yogurt is made from fresh milk and live cultures. 
-                It is perfect for breakfast, smoothies, or as a base for dressings and dips.
-                </p>
-            </div>
-        </div>
 
-        <div>
-            <div>
-                <img src="../assets/cheese.jpg" alt="Organic Cheese" width="200" height="200">
+            <div class="content">
+                <div class="imgdiv">
+                    <img src="../assets/milk.jpeg" alt="Organic Milk">
+                </div>
+                <div>
+                    <h1>Organic Milk (Full Cream)</h1>
+                    <p>Price: &#8377;60 <br>Quantity: 1 Litre
+                        <br> Description: <br>
+                        Our organic full cream milk is sourced from grass-fed cows, ensuring a rich and creamy texture. 
+                        Free from artificial hormones and antibiotics, it is perfect for drinking, cooking, or baking.
+                    </p>
+                </div>
             </div>
-            <div>
-                <h3>Organic Cheese (Cheddar)</h3>
-                <p>Price: &#8377;300 <br>Quantity: 200g
-                    <br> Description: <br>
-                Our organic cheddar cheese is aged to perfection, offering a sharp and rich flavor. 
-                Made from milk of cows raised without antibiotics or growth hormones, it is ideal for sandwiches, 
-                salads, or as a snack.
-                </p>
-            </div>
-        </div>
 
-        <div>
-            <div>
-                <img src="../assets/butter.jpg" alt="Organic Butter" width="200" height="200">
+            <div class="content">
+                <div>
+                    <h3>Organic Yogurt (Plain)</h3>
+                    <p>Price: &#8377;50 <br>Quantity: 500g
+                        <br> Description: <br>
+                        Creamy and tangy, our organic plain yogurt is made from fresh milk and live cultures. 
+                        It is perfect for breakfast, smoothies, or as a base for dressings and dips.
+                    </p>
+                </div>
+                <div class="imgdiv">
+                    <img src="../assets/yogurt.jpeg" alt="Organic Yogurt">
+                </div>
             </div>
-            <div>
-                <h3>Organic Butter (Salted)</h3>
-                <p>Price: &#8377;80 <br>Quantity: 200g
-                    <br> Description: <br>
-                Our organic salted butter is made from the cream of grass-fed cows, providing a rich and creamy taste. 
-                Perfect for spreading on bread, cooking, or baking, it is free from artificial additives.
-                </p>
-            </div>
-        </div>
 
-        <div>
-            <div>
-                <img src="../assets/cream.jpg" alt="Organic Cream" width="200" height="200">
+            <div class="content">
+                <div class="imgdiv">
+                    <img src="../assets/cheese.jpeg" alt="Organic Cheese">
+                </div>
+                <div>
+                    <h3>Organic Cheese (Cheddar)</h3>
+                    <p>Price: &#8377;300 <br>Quantity: 200g
+                        <br> Description: <br>
+                        Our organic cheddar cheese is aged to perfection, offering a sharp and rich flavor. 
+                        Made from milk of cows raised without antibiotics or growth hormones, it is ideal for sandwiches, 
+                        salads, or as a snack.
+                    </p>
+                </div>
             </div>
-            <div>
-                <h3>Organic Cream (Heavy)</h3>
-                <p>Price: &#8377;100 <br>Quantity: 250g
-                    <br> Description: <br>
-                Our organic heavy cream is perfect for whipping, cooking, or adding richness to desserts. 
-                Sourced from cows raised on organic pastures, it is free from preservatives and artificial flavors.
-                </p>
+
+            <div class="content">
+                <div>
+                    <h3>Organic Butter (Salted)</h3>
+                    <p>Price: &#8377;80 <br>Quantity: 200g
+                        <br> Description: <br>
+                        Our organic salted butter is made from the cream of grass-fed cows, providing a rich and creamy taste. 
+                        Perfect for spreading on bread, cooking, or baking, it is free from artificial additives.
+                    </p>
+                </div>
+                <div class="imgdiv">
+                    <img src="../assets/butter.jpeg" alt="Organic Butter" >
+                </div>
             </div>
+
+            <div class="content">
+                <div class="imgdiv">
+                    <img src="../assets/cream.jpeg" alt="Organic Cream" >
+                </div>
+                <div>
+                    <h3>Organic Cream (Heavy)</h3>
+                    <p>Price: &#8377;100 <br>Quantity: 250g
+                        <br> Description: <br>
+                        Our organic heavy cream is perfect for whipping, cooking, or adding richness to desserts. 
+                        Sourced from cows raised on organic pastures, it is free from preservatives and artificial flavors.
+                    </p>
+                </div>
+            </div>
+
         </div>
-        
     </body>
 </html>
