@@ -1,3 +1,10 @@
+<?php
+$msg = "";
+if (isset($_GET['msg']) && $_GET['msg'] == "registered") {
+    $msg = "User Registered Successfully!";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,6 +15,19 @@
         <link rel="stylesheet" href="../CSS/login.css">
     </head>
     <body>
+
+        <?php if ($msg): ?>
+            <div class="message">
+                <?= $msg ?>
+            </div>
+            <script>
+                setTimeout(function() {
+                var msg = document.querySelector('.message');
+                if(msg) msg.style.display = 'none';
+                }, 6000); 
+            </script>
+        <?php endif; ?>
+
         <div class="container">
             <div class="content1">
                 <h1>WELCOME TO ORGANIC FORMING</h1>
@@ -31,7 +51,7 @@
                     </form>
                 </div>
 
-                <p>Don't have an Account ? <a href="../HTML/signup.html">Sign Up</a></p>
+                <p>Don't have an Account ? <a href="../HTML/signup.php">Sign Up</a></p>
             </div>
         </div>
     </body>

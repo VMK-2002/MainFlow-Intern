@@ -39,7 +39,7 @@
                     </form>
                 </div>
 
-                <p>Already have an Account ? <a href="../HTML/signIn.html">Sign In</a></p>
+                <p>Already have an Account ? <a href="../HTML/signIn.php">Sign In</a></p>
             </div>
         </div>
     </body>
