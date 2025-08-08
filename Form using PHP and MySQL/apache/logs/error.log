@@ -1,0 +1,33 @@
+[Thu Aug 07 16:22:38.095838 2025] [ssl:warn] [pid 7688:tid 480] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Aug 07 16:22:38.158818 2025] [ssl:warn] [pid 7688:tid 480] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Aug 07 16:22:38.212373 2025] [mpm_winnt:notice] [pid 7688:tid 480] AH00455: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 configured -- resuming normal operations
+[Thu Aug 07 16:22:38.212373 2025] [mpm_winnt:notice] [pid 7688:tid 480] AH00456: Apache Lounge VS17 Server built: Oct 18 2023 13:03:18
+[Thu Aug 07 16:22:38.212373 2025] [core:notice] [pid 7688:tid 480] AH00094: Command line: 'c:\\users\\veeramanikandan\\onedrive\\desktop\\vmk\\projects\\mainflow-intern\\form using php and mysql\\apache\\bin\\httpd.exe -d C:/Users/Veeramanikandan/OneDrive/Desktop/VMK/Projects/MainFlow-Intern/Form using PHP and MySQL/apache'
+[Thu Aug 07 16:22:38.219402 2025] [mpm_winnt:notice] [pid 7688:tid 480] AH00418: Parent: Created child process 9136
+[Thu Aug 07 16:22:38.667388 2025] [ssl:warn] [pid 9136:tid 528] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Aug 07 16:22:38.722454 2025] [ssl:warn] [pid 9136:tid 528] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Aug 07 16:22:38.762810 2025] [mpm_winnt:notice] [pid 9136:tid 528] AH00354: Child: Starting 150 worker threads.
+[Thu Aug 07 16:31:11.721718 2025] [php:error] [pid 9136:tid 1944] [client 127.0.0.1:51876] PHP Parse error:  syntax error, unexpected token "if", expecting "," or ";" in C:\\Users\\Veeramanikandan\\OneDrive\\Desktop\\VMK\\Projects\\MainFlow-Intern\\Form using PHP and MySQL\\htdocs\\source\\Php\\index.php on line 24, referer: http://localhost/source/Php/index.php?form=signin
+[Thu Aug 07 18:29:20.136893 2025] [php:warn] [pid 9136:tid 1932] [client 127.0.0.1:52755] PHP Warning:  include(../Html/signupForm.html): Failed to open stream: No such file or directory in C:\\Users\\Veeramanikandan\\OneDrive\\Desktop\\VMK\\Projects\\MainFlow-Intern\\Form using PHP and MySQL\\htdocs\\source\\Php\\index.php on line 18
+[Thu Aug 07 18:29:20.137911 2025] [php:warn] [pid 9136:tid 1932] [client 127.0.0.1:52755] PHP Warning:  include(): Failed opening '../Html/signupForm.html' for inclusion (include_path='C:\\Users\\Veeramanikandan\\OneDrive\\Desktop\\VMK\\Projects\\MainFlow-Intern\\Form using PHP and MySQL\\php\\PEAR') in C:\\Users\\Veeramanikandan\\OneDrive\\Desktop\\VMK\\Projects\\MainFlow-Intern\\Form using PHP and MySQL\\htdocs\\source\\Php\\index.php on line 18
+[Fri Aug 08 11:01:24.791338 2025] [ssl:warn] [pid 796:tid 492] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Aug 08 11:01:24.888616 2025] [core:warn] [pid 796:tid 492] AH00098: pid file C:/Users/Veeramanikandan/OneDrive/Desktop/VMK/Projects/MainFlow-Intern/Form using PHP and MySQL/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Aug 08 11:01:24.897116 2025] [ssl:warn] [pid 796:tid 492] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Aug 08 11:01:25.612621 2025] [mpm_winnt:notice] [pid 796:tid 492] AH00455: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 configured -- resuming normal operations
+[Fri Aug 08 11:01:25.612621 2025] [mpm_winnt:notice] [pid 796:tid 492] AH00456: Apache Lounge VS17 Server built: Oct 18 2023 13:03:18
+[Fri Aug 08 11:01:25.612621 2025] [core:notice] [pid 796:tid 492] AH00094: Command line: 'apache\\bin\\httpd.exe -d C:/Users/Veeramanikandan/OneDrive/Desktop/VMK/Projects/MainFlow-Intern/Form using PHP and MySQL/apache -f conf\\httpd.conf'
+[Fri Aug 08 11:01:25.628483 2025] [mpm_winnt:notice] [pid 796:tid 492] AH00418: Parent: Created child process 3084
+Apache server shutdown initiated...
+sl:warn] [pid 3084:tid 484] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Aug 08 11:01:26.441974 2025] [ssl:warn] [pid 3084:tid 484] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Aug 08 11:01:26.504549 2025] [mpm_winnt:notice] [pid 3084:tid 484] AH00354: Child: Starting 150 worker threads.
+[Fri Aug 08 11:01:27.378671 2025] [mpm_winnt:notice] [pid 796:tid 492] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Aug 08 11:01:29.388247 2025] [mpm_winnt:notice] [pid 3084:tid 484] AH00364: Child: All worker threads have exited.
+[Fri Aug 08 11:01:29.451741 2025] [mpm_winnt:notice] [pid 796:tid 492] AH00430: Parent: Child process 3084 exited successfully.
+[Fri Aug 08 11:02:39.460388 2025] [ssl:warn] [pid 8048:tid 444] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Aug 08 11:02:39.548837 2025] [ssl:warn] [pid 8048:tid 444] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Aug 08 11:02:39.610567 2025] [mpm_winnt:notice] [pid 8048:tid 444] AH00455: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 configured -- resuming normal operations
+[Fri Aug 08 11:02:39.610567 2025] [mpm_winnt:notice] [pid 8048:tid 444] AH00456: Apache Lounge VS17 Server built: Oct 18 2023 13:03:18
+[Fri Aug 08 11:02:39.610567 2025] [core:notice] [pid 8048:tid 444] AH00094: Command line: 'c:\\users\\veeramanikandan\\onedrive\\desktop\\vmk\\projects\\mainflow-intern\\form using php and mysql\\apache\\bin\\httpd.exe -d C:/Users/Veeramanikandan/OneDrive/Desktop/VMK/Projects/MainFlow-Intern/Form using PHP and MySQL/apache'
+[Fri Aug 08 11:02:39.618558 2025] [mpm_winnt:notice] [pid 8048:tid 444] AH00418: Parent: Created child process 2748
+[Fri Aug 08 11:02:40.189664 2025] [ssl:warn] [pid 2748:tid 480] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
