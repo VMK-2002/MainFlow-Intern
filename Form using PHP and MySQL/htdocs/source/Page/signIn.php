@@ -1,18 +1,51 @@
 <?php
 
-    $msg = "";
-    if (isset($_GET['msg']) && $_GET['msg'] == "registered") {
-        $msg = "User Registered Successfully!";
+
+    session_start();
+
+    include "../PHP/database.php";
+
+    global $result;
+    $result = null;
+    $msg = $_GET['msg'] ?? "";
+
+    if($_SERVER["REQUEST_METHOD"] === "POST"){
+
+        $user = $_POST['Username/Email'];
+
+        $pattern = "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$/";
+
+        if (preg_match($pattern, $user)) {
+            $stmt = $conn->prepare("SELECT id, username, password FROM users where email = ?");
+            $stmt->bind_param("s", $user);
+            $stmt->execute();
+            $result = $stmt->get_result();
+        } else {
+            $stmt = $conn->prepare("SELECT id, username, password FROM users where username = ?");
+            $stmt->bind_param("s", $user);
+            $stmt->execute();
+            $result = $stmt->get_result();
+        }
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                if(password_verify($_POST['password'], $row["password"])){
+                    $_SESSION['user_id'] = $row["id"];
+                    $_SESSION['username'] = $row["username"];
+
+                    header("Location: ../Home/page/index.php");
+                    exit();
+                }
+                else{
+                    $msg = "Wrong Password. Try again";
+                }
+            }
+        } 
+        else {
+            $msg = "No Username or email found. ";
+        }
     }
-    elseif (isset($_GET['msg']) && $_GET['msg'] == "failed") {
-        $msg = "User Registered Failed. Try Again";
-    }
-    elseif (isset($_GET['msg']) && $_GET['msg'] == "NoUser") {
-        $msg = "No Username or email found. ";
-    }
-    elseif (isset($_GET['msg']) && $_GET['msg'] == "WrongPassword") {
-        $msg = "Wrong Password. Try again";
-}
+
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +67,7 @@
                 setTimeout(function() {
                 var msg = document.querySelector('.message');
                 if(msg) msg.style.display = 'none';
-                }, 6000); 
+                }, 3000); 
             </script>
         <?php endif; ?>
 
@@ -46,7 +79,7 @@
                 <h1>Sign In</h1>
 
                 <div class="formdiv">
-                    <form action="../PHP/validateSignIn.php" method="post">
+                    <form method="POST">
                         <div class="formgroup">
                             <label>Username/Email</label>
                             <input type="text" name="Username/Email" placeholder="Enter your Username or Email">

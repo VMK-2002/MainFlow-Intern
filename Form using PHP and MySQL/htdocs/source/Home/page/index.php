@@ -1,5 +1,10 @@
 <?php
     session_start();
+
+    if(!isset($_SESSION['user_id'])){
+        header("Location: ../../Page/signIn.php?msg=Please login to access the site");
+        exit();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
