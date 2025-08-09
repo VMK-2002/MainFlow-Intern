@@ -1,0 +1,116 @@
+
+<?php
+    session.start()
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fruits</title>
+        <link rel="stylesheet" href="../css/index.css"> 
+        <link rel="stylesheet" href="../css/fruits.css">
+    </head>
+    <body>
+
+        <nav class="navigation">
+            <ul class="list">
+                <li id="logo"><a href="#">Organic Farming</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li class="dropdown">
+                    <select class="products" onchange="window.location.href = this.value">
+                        <option id="optitle" value="" disabled selected>Products</option>
+                        <option value="fruits.php">Fruits</option>
+                        <option value="vegetables.php">Vegetables</option>
+                        <option value="grains.php">Grains</option>
+                        <option value="dairy.php">Dairy</option>
+                     </select>
+                </li>
+                <li><a href="contact.php" target="_blank">Contact</a></li>
+                <li id="about"><a href="about.php" target="_blank">About</a></li>
+                <li id="logout"><a href="../../PHP/logout.php">Log Out</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <h1>Fruits</h1>
+
+            <div class="content">
+                <div class="imgdiv">
+                    <img src="../assets/apple.jpeg" alt="Organic Apple" width="200" height="200">
+                </div>
+                <div>
+                    <h1>Organic Apple (Red Delicious)</h1>
+                    <p>Price: &#8377;180 <br>Quantity: 1 Kg
+                        <br> Description: <br>
+                        Crisp, sweet, and naturally juicy, our organic Red Delicious 
+                        apples are grown without synthetic pesticides 
+                        or wax coatings. Packed with antioxidants and 
+                        fiber, they're perfect for snacking, baking, or
+                        juicing. Enjoy a bite of pure, farm-fresh goodness.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div>
+                    <h1>Organic Orange (Sweet Lime)</h1>
+                    <p>Price: &#8377;120 <br>Quantity: 1 Kg
+                        <br> Description: <br>
+                        Bursting with vitamin C and natural 
+                        sweetness, our organically grown oranges are harvested at 
+                        peak ripeness. With their refreshing taste and juicy segments, they 
+                        make a perfect addition to your breakfast or fresh juice routine.
+                    </p>
+                </div>
+                <div class="imgdiv">
+                    <img src="../assets/orange.jpeg" alt="Organic Orange" width="200" height="200">
+                </div>   
+            </div>
+
+            <div class="content">
+                <div class="imgdiv">
+                    <img src="../assets/banana.jpeg" alt="Organic Banana" width="200" height="200">
+                </div>
+                <div>
+                    <h1>Organic Banana (Cavendish)</h1>
+                    <p>Price: &#8377;60 <br>Quantity: 1 dozon (approx. 12 pieces)
+                        <br> Description: <br>
+                        Naturally ripened and free from artificial chemicals, our Cavendish bananas 
+                        are soft, sweet, and rich in potassium. Ideal for energy snacks, smoothies, or 
+                        kid's lunchboxes. Sustainably grown for a healthier planet and healthier you.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div>
+                    <h1>Organic Grapes (Black Seedless)</h1>
+                    <p>Price: &#8377;200 <br>Quantity: 1 Kg
+                        <br> Description: <br>
+                        Our organic black seedless grapes are sweet, plump, and loaded with antioxidants. 
+                        Perfect for fresh snacking, salads, or desserts. Grown without harmful chemicals and 
+                        carefully packed to preserve freshness and flavor.
+                    </p>
+                </div>
+                <div class="imgdiv">
+                    <img src="../assets/grapes.jpeg" alt="Organic Grapes" width="200" height="200">
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="imgdiv">
+                    <img src="../assets/mango.jpeg" alt="Organic Mango" width="200" height="200">
+                </div>
+                <div>
+                    <h1>Organic Mango (Alphonso - Seasonal)</h1>
+                    <p>Price: &#8377;110 <br>Quantity: 1 Kg
+                        <br> Description: <br>
+                        Experience the king of fruits in its purest form. Our organic Alphonso mangoes 
+                        are naturally ripened, fiberless, and bursting with rich, aromatic sweetness. 
+                        Sourced directly from certified organic orchards during peak season.
+                    </p>
+                </div>
+            </div>
+    </body>
+</html>

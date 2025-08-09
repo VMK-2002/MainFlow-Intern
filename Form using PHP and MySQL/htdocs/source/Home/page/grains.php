@@ -1,0 +1,113 @@
+<?php
+    session.start()
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Grains</title>
+        <link rel="stylesheet" href="../css/index.css"> 
+        <link rel="stylesheet" href="../css/grains.css"> 
+    </head>
+    <body>
+
+        <nav class="navigation">
+            <ul class="list">
+                <li id="logo"><a href="#">Organic Farming</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li class="dropdown">
+                    <select class="products" onchange="window.location.href = this.value">
+                        <option id="optitle" value="" disabled selected>Products</option>
+                        <option value="fruits.php">Fruits</option>
+                        <option value="vegetables.php">Vegetables</option>
+                        <option value="grains.php">Grains</option>
+                        <option value="dairy.php">Dairy</option>
+                     </select>
+                </li>
+                <li><a href="contact.php" target="_blank">Contact</a></li>
+                <li id="about"><a href="about.php" target="_blank">About</a></li>
+                <li id="logout"><a href="../../PHP/logout.php">Log Out</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <h1>Grains</h1>
+
+            <div class="content">
+                <div class="imgdiv">
+                    <img src="../assets/rice.jpeg" alt="Organic Rice" width="200" height="200">
+                </div>
+                <div>
+                    <h1>Organic Rice (Basmati)</h1>
+                    <p>Price: &#8377;80 <br>Quantity: 1 Kg
+                        <br> Description: <br>
+                        Our organic Basmati rice is grown in the fertile plains of India, 
+                        known for its long grains and aromatic fragrance. Free from synthetic fertilizers, 
+                        it is perfect for biryanis, pulaos, and everyday meals.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div>
+                    <h1>Organic Wheat (Whole Grain)</h1>
+                    <p>Price: &#8377;50 <br>Quantity: 1 Kg
+                        <br> Description: <br>
+                        Our whole grain organic wheat is stone-ground to retain its natural nutrients. 
+                        Ideal for making bread, chapatis, and other baked goods, it offers a wholesome 
+                        taste and texture without any additives.
+                    </p>
+                </div>
+                <div class="imgdiv">
+                    <img src="../assets/wheat.jpeg" alt="Organic Wheat" width="200" height="200">
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="imgdiv">
+                    <img src="../assets/oats.jpeg" alt="Organic Oats" width="200" height="200">
+                </div>
+                <div>
+                    <h1>Organic Oats (Rolled)</h1>
+                    <p>Price: &#8377;60 <br>Quantity: 1 Kg
+                        <br> Description: <br>
+                        Our rolled oats are organically grown and minimally processed, 
+                        making them a perfect choice for a healthy breakfast. Rich in fiber, 
+                        they can be used in porridge, smoothies, or baking.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div>
+                    <h1>Organic Barley (Pearl)</h1>
+                    <p>Price: &#8377;70 <br>Quantity: 1 Kg
+                        <br> Description: <br>
+                        Our organic pearl barley is a versatile grain that can be used in soups, 
+                        salads, or as a side dish. High in fiber and nutrients, it is a great addition 
+                        to a balanced diet.
+                    </p>
+                </div>
+                <div class="imgdiv">
+                    <img src="../assets/barley.jpeg" alt="Organic Barley" width="200" height="200">
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="imgdiv">
+                    <img src="../assets/corn.jpeg" alt="Organic Corn" width="200" height="200">
+                </div>
+                <div>
+                    <h1>Organic Corn (Maize)</h1>
+                    <p>Price: &#8377;40 <br>Quantity: 1 Kg
+                        <br> Description: <br>
+                        Our organic corn is harvested at peak ripeness, offering a sweet and crunchy 
+                        flavor. Perfect for salads, salsas, or as a side dish, it is grown without 
+                        synthetic pesticides or fertilizers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

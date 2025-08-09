@@ -1,0 +1,113 @@
+<?php
+    session.start()
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vegetables</title>
+        <link rel="stylesheet" href="../css/index.css"> 
+        <link rel="stylesheet" href="../css/vegetables.css"> 
+    </head>
+    <body>
+
+        <nav class="navigation">
+            <ul class="list">
+                <li id="logo"><a href="#">Organic Farming</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li class="dropdown">
+                    <select class="products" onchange="window.location.href = this.value">
+                        <option id="optitle" value="" disabled selected>Products</option>
+                        <option value="fruits.php">Fruits</option>
+                        <option value="vegetables.php">Vegetables</option>
+                        <option value="grains.php">Grains</option>
+                        <option value="dairy.php">Dairy</option>
+                     </select>
+                </li>
+                <li><a href="contact.php" target="_blank">Contact</a></li>
+                <li id="about"><a href="about.php" target="_blank">About</a></li>
+                <li id="logout"><a href="../../PHP/logout.php">Log Out</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <h1>Vegetables</h1>
+
+            <div class="content">
+                <div class="imgdiv">
+                    <img src="../assets/carrot.jpeg" alt="Organic Carrot" width="200" height="200">
+                </div>
+                <div>
+                    <h1>Organic Carrot (Nantes)</h1>
+                        <p>Price: &#8377;50 <br>Quantity: 1 Kg
+                            <br> Description: <br>
+                            Our organic Nantes carrots are sweet, crunchy, and packed with vitamins. 
+                            Grown in nutrient-rich soil without synthetic fertilizers, they are perfect for 
+                            salads, soups, or as a healthy snack. Enjoy the natural sweetness and vibrant color.
+                        </p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div>
+                    <h1>Organic Tomato (Roma)</h1>
+                    <p>Price: &#8377;40 <br>Quantity: 1 Kg
+                        <br> Description: <br>
+                        Juicy and flavorful, our Roma tomatoes are perfect for sauces, salads, and cooking. 
+                        Grown organically without pesticides, they offer a rich taste and vibrant color, 
+                        making them a staple in any kitchen.
+                    </p>
+                </div>
+                <div class="imgdiv">
+                    <img src="../assets/tomato.jpeg" alt="Organic Tomato" width="200" height="200">
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="imgdiv">
+                    <img src="../assets/broccoli.jpeg" alt="Organic Broccoli" width="200" height="200">
+                </div>
+                <div>
+                    <h1>Organic Broccoli (Calabrese)</h1>
+                    <p>Price: &#8377;70 <br>Quantity: 1 Kg
+                        <br> Description: <br>
+                        Packed with nutrients, our organic Calabrese broccoli is a powerhouse of vitamins and minerals. 
+                        Grown without harmful chemicals, it retains its natural crunch and flavor, making it ideal for steaming, 
+                        stir-frying, or adding to salads.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div>
+                    <h1>Organic Spinach (Savoy)</h1>
+                    <p>Price: &#8377;30 <br>Quantity: 1 Kg
+                        <br> Description: <br>
+                        Our organic Savoy spinach is tender, leafy, and rich in iron. 
+                        Grown in organic farms, it is free from pesticides and chemicals, 
+                        making it a healthy choice for salads, smoothies, or cooking.
+                    </p>
+                </div>
+                <div class="imgdiv">
+                    <img src="../assets/spinach.jpeg" alt="Organic Spinach" width="200" height="200">
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="imgdiv">
+                    <img src="../assets/potato.jpeg" alt="Organic Potato" width="200" height="200">
+                </div>
+                <div>
+                    <h1>Organic Potato (Yukon Gold)</h1>
+                    <p>Price: &#8377;40 <br>Quantity: 1 Kg
+                        <br> Description: <br>
+                        Our Yukon Gold potatoes are creamy, buttery, and perfect for mashing, roasting, or baking. 
+                        Grown organically, they are free from synthetic pesticides and fertilizers, ensuring a wholesome 
+                        and delicious addition to your meals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

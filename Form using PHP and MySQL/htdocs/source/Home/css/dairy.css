@@ -1,0 +1,46 @@
+body{
+    background-color: white;
+}
+
+.container{
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-color: #0aff8d7f;
+    box-sizing: border-box;
+}
+
+.content{
+    display: flex;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #d2f1e3;
+}
+
+.imgdiv{
+    display: flex;
+}
+
+.content img {
+    margin: auto;
+}
+
+h1{
+    margin: 20px 20px 30px 0px;
+    font-size: 50px;
+}
+
+.content h1{
+    margin: 20px 20px 30px 0px;
+    font-size: xx-large;
+}
+
+.content p{
+    font-size: x-large;
+    justify-content: left;
+    line-height: 1.6;
+}
